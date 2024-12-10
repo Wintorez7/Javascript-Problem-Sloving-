@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            let num = +(prompt("Enter the number"));
+                let temp = num;
+                let length = 0;
+
+                // Calculate the number of digits
+                while (num > 0) {
+                    num = Math.trunc(num / 10);
+                    length++;
+                }
+                num = temp;  // Restore the original number
+
+                let sum = 0;
+                // Check if the number is an Armstrong number
+                while (num > 0) {
+                    let rem = num % 10;
+                    sum += Math.pow(rem, length);
+                    num = Math.trunc(num / 10);
+                }
+
+                if (sum === temp) {
+                    console.log("Armstrong number");
+                } else {
+                    console.log("Not an Armstrong number");
+                }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

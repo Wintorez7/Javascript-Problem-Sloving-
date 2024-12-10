@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="body">
+    <script>
+        let n = +(prompt("Enter the number"));
+        let sum = 0;
+        let i=1;
+
+        while(i <= n/2){
+            if(n % 10 === 0){
+                sum += i;
+            }
+            i++;
+        }
+        if(sum === n && sum !== 0){
+            console.log(`${n} is Perfect Number`)
+        }
+        else{
+            console.log(`${n} is not Perfect Number`)
+        }
+
+
+        
+
+
+    </script>
+</body>
+</html>

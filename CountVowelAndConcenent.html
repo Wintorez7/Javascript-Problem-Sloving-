@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s1 = "dhruva123@gmail#$";
+        let vowel = "aeiou";
+
+        // outer loop
+        for(let i = 0; i < s1.length; i++){
+            let char = s1[i].toLowerCase();
+            let isVowel = false;
+            // inner loop
+            for(let j = 0; j < vowel.length; j++){
+                if(s1[i] === vowel[j]){
+                    isVowel = true;
+                    break;
+                }
+               
+             }
+                if (isVowel) {
+                 console.log(`Vowel: ${s1[i]}`);
+                } 
+                 else {
+                 console.log(`Not an alphabet or Conecenent: ${s1[i]}`);
+                }
+            
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // replace character without using replace method
+        let s1 = "good";
+        let temp = "";
+
+        for(let i = 0; i < s1.length; i++ ){
+            let ch = s1[i];
+            if(ch == 'o'){
+                temp+='@';
+            }else{
+                temp+=ch;
+            }
+        }
+        console.log(temp);
+
+
+    </script>
+</body>
+</html>
