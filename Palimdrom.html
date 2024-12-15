@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        
+        function main(){
+            let n = +(prompt("Enter the Number"));
+            let orgNum = n;
+            let lastdigit = 0;
+            let rev = 0;
+
+            while(n > 0){
+                lastdigit = n % 10;
+                rev = (rev * 10) + lastdigit;
+                n = Math.trunc(n/10);
+            }
+            console.log(rev);
+            if(rev == orgNum){
+                console.log("Palindrom")
+            }
+            else{
+                console.log("Not Palindrom")
+            }
+        
+        }
+        main();
+    </script>
+</body>
+</html>
